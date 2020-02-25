@@ -1,0 +1,56 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 20px auto;
+}
+
+.members-container {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px 0;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.members-choosen {
+    -webkit-font-smoothing: auto;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .75rem;
+    letter-spacing: .3px;
+    box-sizing: border-box;
+    color: #5f6368;
+    font-weight: 500;
+    margin: 0;
+    max-height: 20px;
+    display: inline-block;
+    max-width: 325px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+    cursor: move;
+}
+
+.discard {
+    height: 16px;
+    opacity: .54;
+    width: 16px;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/close_black_16dp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    margin-left: 4px;
+}

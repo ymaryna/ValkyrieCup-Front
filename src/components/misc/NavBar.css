@@ -1,0 +1,24 @@
+.nav-logo {
+    display: flex;
+    padding-left: 60px;
+    margin: auto;
+}
+
+.backg-dark {
+    background-color: black !important;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.nav-brand {
+    color: white;
+}
+/* .navbar {
+    background-color: black !important;
+} */
+
+button {
+    margin: 0;
+}
