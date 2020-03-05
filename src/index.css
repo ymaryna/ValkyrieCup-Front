@@ -12,9 +12,38 @@ body{
     border: 1px solid #bce439 !important;
 }
 
-/* main {
-    margin-top: 70px;
-} */
+.btn-home {
+    padding: .8vw 2vw !important;
+    font-size: 1.6vw !important;
+    border-radius: .25vw !important;
+    margin: 20px 0 30px 0 !important
+}
+
+a:hover {
+    color: #bce439 !important;
+    text-decoration: none !important;
+}
+
+a {
+    color: white !important;
+}
+
+.container {
+ color: white;
+}
+
+/* NAVBAR */
+
+/* FOOTER */
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* LOGIN */
 
 .Login {
     margin: 40px 20px 20px 20px;
@@ -25,10 +54,486 @@ form {
     color: white;
     padding: 20px;
     background-color: #292929;
-    border-radius: 2%;
+    border-radius: .25rem;
 }
 
 form a {
     color: #bce439 !important;
     text-align: center;
+}
+
+/* HOME */
+/* Header Video */
+.video video {
+    width: 100%;
+    margin-top: -70px
+}
+
+.video-gradient {
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(25,25,25,0), rgba(25,25,25,1));
+    margin-top: -105px;
+    position: sticky;
+    width: 100%
+}
+
+/* Próximo torneo */
+.prox-comp {
+    height: auto;
+    font-family: Anton;
+    font-size: 20%;
+    font-weight: 900;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./assets/bg.png");
+    background-size: 100%;
+}
+
+.section-title {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 15px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #191919;
+}
+
+.prox-comp img {
+    width: 60%;
+    margin-top: 10px
+}
+
+.edicion {
+    color: white;
+    font-size: 4vw;
+    margin-top: 10px
+}
+
+.edicion-date {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #bce439;
+    font-size: 3vw
+}
+
+/* Equipos */
+.section-teams {
+    padding: 80px 40px;
+    display: flex;
+    background-color: black;
+}
+
+.vertical-align {
+    writing-mode: vertical-rl;
+    font-size: 8vw;
+    margin: 10px 30px;
+    color: black
+}
+
+.team-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-card {
+    width: 335px;
+    height: 235px;
+    background-color: #292929;
+    margin: 10px;
+    border-radius: 4px;
+    background-image: url("./assets/roster-background.png");
+}
+
+.team-card .title {
+    color: white;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.team-card .roster {
+    display: flex;
+}
+
+.roster-names{
+    display: grid;
+}
+
+.roster-names a {
+    margin: 0;
+    font-family: Montserrat;
+    color: white;
+}
+
+
+
+.vertical-align-card {
+    writing-mode: vertical-rl;
+    font-size: 2vw;
+    /* margin: 10px 30px; */
+    color: #292929;
+    padding: 0 20px 0 0;;
+    border-right: 1px solid #bce439;
+}
+
+/* Twitch */
+.twitch {
+    display: flex;
+    padding: 80px;
+}
+
+.directo .section-title {
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #191919;
+    float: right;
+}
+
+
+/* PROFILE */
+
+.card {
+    background-color: #191919 !important;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    color: white;
+}
+
+.profile .card {
+    margin: 0 50px 0 0;
+    background-color: #0f0f0f !important;
+    
+    /* position: sticky !important;
+    top: 0 !important; */
+}
+
+.profile .info {
+    border-radius: .25rem;
+    background-color: #0f0f0f;
+    padding: 40px 60px;
+    width: 28rem;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.profile .info.small {
+    width: 18rem;
+}
+
+.profile .info .rank {
+    display: flex;
+    padding: 10px 10px 10px 0;
+    justify-content: center;
+}
+
+.rank .section-title {
+    margin: 0 20px 0 0;
+}
+
+.team .section-title {
+    margin: 0 20px 0 0;
+}
+
+.vertical-align-card.black {
+    color: #0f0f0f;
+}
+
+.info .team {
+    display: flex;
+    padding: 10px 10px 10px 0;
+    justify-content: center;
+}
+
+.info h2 {
+    align-self: center;
+}
+
+.info.small p {
+    font-size: 1.3rem;
+}
+
+.info.stats {
+    margin: 0 0 40px 0;
+    width: 100%;
+}
+
+.info.stats.admin {
+    margin: 20px 0 60px 0;
+    width: 100%;
+}
+
+.info .section-title {
+    color: #0f0f0f;
+}
+
+.info .tournament {
+    padding: 0 40px;
+    background-color: black;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* TEAM PROFILE */
+.team-profile {
+    display: block;
+    justify-content: flex-start;
+    color: white;
+}
+
+.team-title {
+    font-size: 3vw;
+    text-align: center;
+    background-color: #191919;
+    padding: 20px 60px;
+    border-radius: .23rem;
+    margin: -40px auto 10px;
+    width: max-content;
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.team-player {
+    width: 335px;
+    border-radius: .25rem;
+    background-color: #0f0f0f;
+    padding: 40px 60px;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-player .nick p {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* ADMIN PROFILE */
+.admin-profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.admin-profile .info {
+    border-radius: .25rem;
+    background-color: #0f0f0f;
+    padding: 40px 60px;
+    width: 60rem;
+    margin: 0 10px;
+    text-align: center;
+    display: flex;
+}
+
+.admin-profile .tournament {
+    padding: 0 40px 0 20px;
+    border-right: 1px solid white;
+}
+
+.admin-profile .edits {
+    display: -webkit-box;
+    margin-left: 40px;
+    flex-wrap: wrap;
+}
+
+.edits .inside {
+    display: -webkit-box;
+}
+
+.bracket .btn {
+    padding: .3rem .5rem !important;
+    font-size: .8rem !important;
+}
+
+/* GROUPS */
+.section-groups {
+    padding: 80px 40px;
+    display: flex;
+}
+
+.section-groups .section-title {
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #191919;
+    float: right;
+}
+
+.groups-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.groups-container .group {
+    border-radius: .25rem;
+    background-color: #0f0f0f;
+    padding: 40px 60px;
+    width: 46%;
+    margin: 10px 10px;
+    text-align: center;
+    display: grid;
+}
+
+.group .section-title {
+    color: #0f0f0f;
+}
+
+.group .team {
+    padding: 10px;
+    border-radius: 0.25rem;
+    background-color: black;
+    margin: 4px;
+    text-align: left;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* BRACKET */
+
+.section-bracket {
+    padding: 80px 40px;
+    display: flex;
+    background-color: #0f0f0f;
+    height: 850px;
+}
+
+.bracket-container {
+    /* display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; */
+    position: relative;
+    /* position: absolute; */
+    z-index: 1;
+}
+
+.section-bracket .section-title {
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #0f0f0f;
+    float: right;
+}
+
+.match {
+    display: flex;
+    min-width: 12rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #bce439;
+    position: relative;
+    background: #0f0f0f;
+    border-color: #bce439;
+    margin-bottom: 15px;
+}
+
+.header {
+    display: flex;
+    position: absolute;
+    left: 0.25rem;
+    top: -0.5rem;
+    right: 0.25rem;
+    font: 400 0.75rem/1.2em "Noto Sans", sans-serif;
+    z-index: 1;
+}
+
+.header .name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 0.25rem;
+    margin-right: 0;
+    margin-left: 0;
+    color: #bce439;
+    background: #0f0f0f;
+}
+
+.record {
+    -webkit-box-direction: normal;
+    overflow-wrap: break-word;
+}
+
+.opponent {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1px;
+    -webkit-box-direction: normal;
+    overflow-wrap: break-word;
+}
+
+.win {
+    flex: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    margin-right: 0.25rem;
+    width: 160px;
+}
+
+.result {
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 0;
+    color: white;
+}
+
+.bracket-links {
+    position: absolute;
+}
+
+.link {
+    fill: none;
+    stroke: white;
+    stroke-width: 62.5;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    shape-rendering: crispEdges;
+
+}
+
+.match.quarters {
+    margin-bottom: 97px;
+}
+
+.match.semis {
+    margin-bottom: 262px;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+
+    .team-card {
+        width: 150px;
+        height: 100px;
+        background-color: #292929;
+        margin: 10px;
+    }
+
+    /* PROFILE */
+    
+    .profile {
+        display: block;
+        flex-wrap: wrap;
+    }
 }

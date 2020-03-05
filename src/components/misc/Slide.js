@@ -1,20 +1,21 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
+import { slideBar1, slideBar2, slideBar3 } from '../../assets'
 
 const Slide = () => {
     return(
-        <Carousel>
+        <Carousel id="news">
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="https://i.ibb.co/r2MwdZz/VALKYRIE-CUP-DEFAULT.jpg"
+            src={slideBar1}
             alt="First slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="https://i.ibb.co/PMCCd77/CASTERS-ABICHU-SCYTHE.jpg"
+            src={slideBar2}
             alt="Third slide"
             />
 
@@ -24,7 +25,7 @@ const Slide = () => {
         <Carousel.Item>
             <img
             className="d-block w-100"
-            src="https://i.ibb.co/YXHLY34/2-KRAKEN.jpg"
+            src={slideBar3}
             alt="Third slide"
             />
 

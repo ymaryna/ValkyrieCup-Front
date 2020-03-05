@@ -34,7 +34,7 @@ const SearchBarUI = ({uplayNick, handleSearch, errorClassName, users, handleClic
             <div className="cards-container">
                 {users.map(user => {
                     return(
-                        <div key={user.id} className="card" style={{width: '18rem'}}>
+                        <div key={user.id} className="card" style={{width: '10rem'}}>
                             <img className="card-img-top" src={user.avatar} alt="" />
                             <div className="card-body">
                                 <h5 className="card-title">{user.uplayNick}</h5>

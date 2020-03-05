@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { WithAuthConsumer } from '../../contexts/AuthContext'
+import { Button } from 'react-bootstrap'
 
 class Logout extends Component {
     state = {
@@ -16,12 +17,12 @@ class Logout extends Component {
       }
     render() {
         return(
-          <button
+          <Button
           onClick={this.handleClick}
           type="submit"
           className="btn btn-primary"
           disabled={this.state.loading}
-          >Logout</button>
+          >Logout</Button>
         )
     }
 }

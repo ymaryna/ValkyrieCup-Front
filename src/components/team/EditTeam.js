@@ -23,32 +23,22 @@ class EditTeam extends Component {
 
         ValkCupService.user(this.props.currentUser.id)
             .then(user => {
+                
+                const lastMembers = user.team[0].members.map(user => {
+                    return user.uplayNick
+                })
+
                 this.setState({
-                    members: user.team[0].members,
+                    members: lastMembers,
                     teamId: user.team[0].id
                 })
             })
-            // .then(() =>{
-            //     for(let i = 0; i <= this.state.membersId.length; i++) {
-            //         this.state.membersId[0] 
-            //     }
-            //     this.state.membersId.map(member => {
-
-            //     })
-            //     ValkCupService.user(this.props.currentUser.id)
-            //         .then(user => {
-            //             this.setState({
-            //                 membersId: [...this.state.membersId, user.team.members]
-            //             })
-            //         })
-            // })
-        
     }
 
     handleClick = (user) => {
         this.setState({
             members: [...this.state.members, user.uplayNick]
-        }, () => console.log(this.state.members))
+        })
     }
 
     handleClickDiscard = (email) => {
@@ -68,7 +58,7 @@ class EditTeam extends Component {
                 const { uplayNick } = this.state
                 ValkCupService.users({uplayNick})
                 .then(users => {
-                    console.log('counter => ', ++this.counter)
+                    // console.log('counter => ', ++this.counter)
                     this.setState({ users }, () => console.info('state => ', this.state.users))
                 })
             }, 500)

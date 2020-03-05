@@ -70,8 +70,9 @@ class CreateTeam extends Component {
             .then(() => {
               this.setState({ success: true })
             })
-            .catch(() => {
-              this.setState({ error: true, loading: false })
+            .catch(({ response: { data: {message} } }) => {
+              console.info('Error => ', message)
+              this.setState({ error: message, loading: false })
             })
         })
       }
@@ -80,7 +81,7 @@ class CreateTeam extends Component {
         const errorClassName = this.state.error ? 'is-invalid' : ''
 
         const {handleSearch, handleClick, handleClickDiscard} = this
-        const {users, uplayNick, members} = this.state
+        const {users, uplayNick, members, error} = this.state
 
         if (this.state.success) {
           return <Redirect to="/login"/>
@@ -120,6 +121,9 @@ class CreateTeam extends Component {
                     id="logo"
                     />
                 </div>
+                {
+                    error && <p style={{color: 'red'}}>{error}</p>
+                }
 
                 <button
                     type="submit"

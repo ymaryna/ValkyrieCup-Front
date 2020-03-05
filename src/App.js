@@ -9,6 +9,10 @@ import Profile from './components/user/Profile';
 import AuthenticatedRoute from './components/misc/AuthenticatedRoute';
 import CreateTeam from './components/pages/CreateTeam';
 import EditTeam from './components/team/EditTeam';
+import UserProfile from './components/user/UserProfile';
+import TeamProfile from './components/team/TeamProfile';
+import RainbowSixSiege from './components/pages/RainbowSixSiege';
+import Footer from './components/misc/Footer';
 
 function App() {
   return (
@@ -28,6 +32,14 @@ function App() {
               <Register />
             </Route>
 
+            <Route exact path="/tournament/rainbow-six-siege">
+              <RainbowSixSiege />
+            </Route>
+
+            <Route exact path="/user/:id" component={UserProfile}/>
+
+            <Route exact path="/team/profile/:id" component={TeamProfile}/>
+
             <AuthenticatedRoute exact path="/team/create">
               <CreateTeam />
             </AuthenticatedRoute>
@@ -43,6 +55,7 @@ function App() {
             <Redirect to="/"/>
           </Switch>
         </main>
+        <Footer />
     </div>
   );
 }
